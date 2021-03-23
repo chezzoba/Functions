@@ -1,4 +1,4 @@
-from Polynomial import Polynomial
+from MathFunctions.Polynomial import Polynomial
 
 factorial = lambda i: 1 if i in [0, 1] else int(i) * factorial(int(i) - 1)
 e = sum(1 / factorial(n) for n in range(10000))

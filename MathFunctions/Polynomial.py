@@ -67,4 +67,4 @@ class Linear(Polynomial):
         super().__init__([b, m], 1, 1)
         self.m, self.b = m, b
 
-    __str__ = lambda self: f'{self.m}x + {self.b}'
+    __str__ = lambda self: f'{self.m}s + {self.b}'

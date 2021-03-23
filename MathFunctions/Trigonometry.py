@@ -1,4 +1,4 @@
-from Polynomial import Polynomial
+from MathFunctions.Polynomial import Polynomial
 
 class Sin(Polynomial):
     '''
