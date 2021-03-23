@@ -8,7 +8,7 @@ setup(
   author = 'Kaizad Wadia',
   author_email = 'kaizad@email.com',
   url = 'https://github.com/chezzoba/',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/chezzoba/Functions/archive/refs/tags/v01.tar.gz',
   keywords = ['Math', 'Numbers', 'Functions', 'Trigonometry', 'Log'],
   install_requires=[],
   classifiers=[
