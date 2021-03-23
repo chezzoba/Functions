@@ -1,7 +1,7 @@
 from MathFunctions.Polynomial import Polynomial
 
 factorial = lambda i: 1 if i in [0, 1] else int(i) * factorial(int(i) - 1)
-e = sum(1 / factorial(n) for n in range(10000))
+e = 2.7182818284590452353602874713527
 
 class Logarithm(Polynomial):
     def __init__(self, base=e, coef=1, fac=1):

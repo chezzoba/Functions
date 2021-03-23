@@ -1,5 +1,8 @@
 from MathFunctions.Polynomial import Polynomial
 
+pi = 3.141592653589793
+
+
 class Sin(Polynomial):
     '''
     Sine Function from its Taylor Series
@@ -12,7 +15,7 @@ class Sin(Polynomial):
 
     __str__ = lambda self: f'{self.c}Sin({self.f}s)'
 
-    __call__ = lambda self, s: super().__call__(((self.f * s) % (3.141592653589793 * 2)) / self.f)
+    __call__ = lambda self, s: super().__call__(((self.f * s) % (pi * 2)) / self.f)
 
     integral = lambda self, C=0: Cos(self.f, -self.c / self.f)
 
@@ -31,7 +34,7 @@ class Cos(Polynomial):
 
     __str__ = lambda self: f'{self.c}Cos({self.f}s)'
 
-    __call__ = lambda self, s: super().__call__(((self.f * s) % (3.141592653589793 * 2)) / self.f)
+    __call__ = lambda self, s: super().__call__(((self.f * s) % (pi * 2)) / self.f)
 
     integral = lambda self, C=0: Sin(self.f, self.c / self.f)
 
