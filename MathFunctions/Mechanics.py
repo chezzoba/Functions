@@ -1,6 +1,6 @@
 class StepFunction:
     '''
-    This class serves to represent and manipulate Macaulay Step Functions programmatically.
+    This class serves to represent and manipulate Macaulay Step MathFunctions programmatically.
     Multiplication and division only work with constants, unlike addition and subtraction.
     '''
     def __init__(self, arr):

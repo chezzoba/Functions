@@ -61,7 +61,7 @@ class Polynomial:
 
 class Linear(Polynomial):
     '''
-    Linear Functions of form y=mx + b
+    Linear MathFunctions of form y=mx + b
     '''
     def __init__(self, m=1, b=0):
         super().__init__([b, m], 1, 1)
