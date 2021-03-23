@@ -1,4 +1,3 @@
-
 class Polynomial:
     '''
     This class serves to represent and manipulate Polynomial Functions programmatically.

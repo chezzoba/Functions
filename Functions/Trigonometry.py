@@ -39,3 +39,4 @@ class Cos(Polynomial):
 
 
 cos, sin = Cos(), Sin()
+tan = lambda s: sin(s) / cos(s)
