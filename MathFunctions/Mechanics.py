@@ -71,6 +71,6 @@ class StepFunction:
 
     min = lambda self, a, b: self(self.argmin(a, b))
 
-    __repr__ = __str__ = lambda self: ' '.join(f"{'+'*int(c>0)}{round(c, 5)}[{self.s+'-'+str(round(r, 2)) if r else ''}]^{e}" for c,r,e in self.ary)
+    __repr__ = __str__ = lambda self: ' '.join(f"{'+'*int(c>0)}{round(c, 5)}[{self.s}{'-'+str(round(r, 2)) if r else ''}]^{e}" for c,r,e in self.ary)
 
     __rmul__, __radd__ = __mul__, __add__ # Commutative methods

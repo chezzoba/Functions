@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'MathFunctions',
   packages = ['MathFunctions'],
-  version = '0.6',
+  version = '0.7',
   license='MIT',
   description = 'Programmatically Create and Manipulate Mathematical Functions',
   author = 'Kaizad Wadia',
