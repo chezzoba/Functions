@@ -3,8 +3,9 @@ class Polynomial:
     This class serves to represent and manipulate Polynomial Functions programmatically.
     Multiplication and division only work with constants, unlike addition and subtraction.
     '''
-    def __init__(self, arr, freq=1, coef=1):
+    def __init__(self, arr, freq=1, coef=1, symbol='y'):
         self.ary, self.f, self.c = arr, freq, coef
+        self.s = symbol
 
     def __add__(self, other):
         if isinstance(other, Polynomial):
@@ -55,7 +56,7 @@ class Polynomial:
 
     min = lambda self, a, b: self(self.argmin(a, b))
 
-    __str__ = lambda self: str(self.c) + '(' + ' + '.join(f"{c}s^{e}" for e, c in enumerate(self.ary) if c) + ')'
+    __str__ = lambda self: str(self.c) + '(' + ' + '.join(f"{c}{self.s}^{e}" for e, c in enumerate(self.ary) if c) + ')'
 
     __rmul__, __radd__ = __mul__, __add__ # Commutative methods
 

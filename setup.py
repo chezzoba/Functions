@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'MathFunctions',
   packages = ['MathFunctions'],
-  version = '0.4',
+  version = '0.6',
   license='MIT',
   description = 'Programmatically Create and Manipulate Mathematical Functions',
   author = 'Kaizad Wadia',
   author_email = 'kaizad@email.com',
   url = 'https://github.com/chezzoba/',
-  download_url = 'https://github.com/chezzoba/Functions/archive/refs/tags/v04.tar.gz',
+  download_url = 'https://github.com/chezzoba/Functions/archive/refs/tags/v06.tar.gz',
   keywords = ['Math', 'Numbers', 'Functions', 'Trigonometry', 'Log'],
   install_requires=[],
   classifiers=[
