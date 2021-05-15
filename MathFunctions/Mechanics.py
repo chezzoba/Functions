@@ -1,3 +1,5 @@
+from MathFunctions.Polynomial import Polynomial
+
 class StepFunction:
     '''
     This class serves to represent and manipulate Macaulay Step MathFunctions programmatically.
