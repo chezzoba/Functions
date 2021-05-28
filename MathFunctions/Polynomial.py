@@ -56,7 +56,7 @@ class Polynomial:
 
     min = lambda self, a, b: self(self.argmin(a, b))
 
-    __str__ = lambda self: str(self.c) + '(' + ' + '.join(f"{c}{self.s}^{e}" for e, c in enumerate(self.ary) if c) + ')'
+    __str__ = lambda self: str(self.c) + '(' + ' + '.join(f"{c}{self.s}^{{{e}}}" for e, c in enumerate(self.ary) if c) + ')'
 
     __rmul__, __radd__ = __mul__, __add__ # Commutative methods
 
